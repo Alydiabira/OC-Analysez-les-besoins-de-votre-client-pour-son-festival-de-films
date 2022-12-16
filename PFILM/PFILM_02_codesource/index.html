@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Fetival des films de plein air</title>
+</head>
+<body>
+
+
+
+
+<!-- MODAL -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">FORMULAIRE DE PRÉ-INSCRIPTION</h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">L'accès aux projections sera gratuit et ouvert à tous mais je souhaite que le public puisse se préinscrire pour estimer le nombre de personnes présentes chaque soir.</p>
+          <form action="" method="post" class="text-center">
+            <h6 class="m-3">VOTRE NOM ET PRENOM</h6>
+            <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="votre nom">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="votre prenom">
+                </div>
+              </div>
+            <h6 class="m-3">DATES DISPONIBLE</h6>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="5 Août">
+                <label class="form-check-label" for="inlineCheckbox1">5 Août</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="6 Août">
+                <label class="form-check-label" for="inlineCheckbox2">6 Août</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="7 Août">
+                <label class="form-check-label" for="inlineCheckbox3">7 Août</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="8 Août">
+                <label class="form-check-label" for="inlineCheckbox4">8 Août</label>
+              </div>
+              <h6 class="m-3">VOTRE EMAIL</h6>
+              <div class="form-row">
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="votreemail@email.fr">
+                </div>
+              </div>
+              <input class="m-3 input-submit" type="submit" value="ENVOYER">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+
+    <header class="bg-menu">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <a href="#"><img src="img/logo.png" alt="logo festival"></a>
+            </div>
+                <div class="col-lg-3 reponsive-mobile-hidden">
+                    <p class="pt-5">
+                     <a class="pre-inscription" href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-calendar-week"></i> PRÉ-INSCRIPTION</a>
+                    </p>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-black">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item text-center reponsive-mobile">
+                                <p class="pt-3">
+                                    <a class="pre-inscription" href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-calendar-week"></i> PRÉ-INSCRIPTION</a>
+                                </p>
+                            </li>
+                            <li class="nav-item active text-center text-uppercase">
+                            <a  class="nav-link" href="#">ACCEUIL</a>
+                            </li>
+                            <li class="nav-item text-center text-uppercase">
+                            <a  class="nav-link" href="#festival">FESTIVAL</a>
+                            </li>
+                            <li class="nav-item text-center text-uppercase">
+                            <a  class="nav-link" href="#news">ACTUALITES</a>
+                            </li>
+                            <li class="nav-item text-center text-uppercase">
+                            <a class="nav-link" href="#movie">FILM</a>
+                            </li>
+                            <li class="nav-item text-center text-uppercase">
+                                <a class="nav-link" href="#reservation">RESERVATION</a>
+                            </li>
+                            <li class="nav-item text-center text-uppercase">
+                                <a class="nav-link" href="#map">PLAN</a>
+                            </li>
+                            <!-- CHANGE LANGUAGE -->
+                            <li class="nav-item text-center">
+                                <a class="d-inline-block" href="?lang=fr"><img class="flag" src="img/flag-french.png" alt="langue francaise"></a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="d-inline-block" href="?lang=en"><img class="flag" src="img/flag-english.png" alt="langue anglaise"></a>
+                            </li>
+                        </ul>
+                        </div>
+                  </nav>
+            </div>
+          </div>
+        </div>
+    </header>
+<section class="info-text reponsive-mobile-hidden">
+  
+  <h3 class="text-center">
+    <ul class="list-inline">
+      <li class="list-inline-item">Découvrez notre cinéma de plein air,</li>
+      <li class="list-inline-item">totalement gratuit et prés du </li>
+      <li class="list-inline-item">Parc Monceau à Paris</li>
+    </ul>
+  </h3>
+</section>
+<section class="carousel">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner embed-responsive">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/slider/slider1.jpg" alt="1 slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slider/slider2.jpg" alt="2 slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slider/slider3.jpg" alt="3 slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slider/slider4.jpg" alt="4 slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slider/slider5.jpg" alt="5 slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slider/slider6.jpg" alt="6 slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Précédent</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Suivant</span>
+        </a>
+      </div>
+</section>
+<section class="reservation mb-5" id="reservation">
+<div class="row">
+    <div class="col-lg-6 col-sm-12 text-center">
+      Jennifer Edwards est l'organisatrice <br>
+      Voici ce qu'elle vous dit :
+    </div>
+    <div class="col-lg-6 col-sm-12 mt-4 mb-4 text-center">
+        <a class="pre-inscription" href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-calendar-week"></i> PRÉ-INSCRIPTION</a>
+    </div>
+</div>
+</section>
+<div class="container">
+<section id="festival">
+<div class="row">
+    <div class="col-lg-6 col-sm-12">
+        <div class="presentation">
+            <h3><i class="fas fa-film"></i> PRÉSENTATION</h3>
+    <p>C'est avec une immense joie que notre association "Les Films de Plein Air" vient d'être créée.
+    Notre objectif ? Vous faire découvrir ou redécouvrir des films d'auteur, seul, en famille ou entre amis.
+    Notre premier projet est un festival où nous espérons vous voir très nombreux !
+    Si vous souhaitez plus d'informations, n'hésitez surtout pas à nous contacter, nous nous ferons un plaisir de vous répondre dans les meilleurs délais.</p>
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+        <div  class="festival">
+            <h3><i class="fas fa-file-video"></i> LE FESTIVAL</h3>
+            <p>Le festival des Films de Plein Air se déroulera du 5 au 8 août 2018 au Parc Monceau à Paris.
+                C'est l'occasion pour vous de découvrir ce superbe parc avant d'être devant le (très) grand écran et de profiter d'une bonne soirée dans un cadre plus que convivial ( des transats seront en location).
+                N'hésitez pas à vous pré-inscrire à nos séances, ce qui nous permettra d'organiser ce festival à la perfection !
+                La participation à ce festival est GRATUITE !</p>
+        </div>
+    </div>
+</div>
+</section>
+</div>
+<section class="film mt-5" id="movie">
+  <div class="nav nav-tabs film-menu row justify-content-center">
+    <h3 class="font-weight-bold text-uppercase">Nos Programations</h3>
+    <p class="text-center">Liste des films communiquer régulièrement sur les dernières actualités du festival.</p>
+    <a class="pre-inscription col-lg-3 col-sm-12" data-toggle="tab" href="#menu0"><i class="fas fa-film"></i> FILM DU 5 AOUT</a>
+    <a class="pre-inscription col-lg-3 col-sm-12" data-toggle="tab" href="#menu1"><i class="fas fa-film"></i> FILM DU 6 AOUT</a>
+    <a class="pre-inscription col-lg-3 col-sm-12" data-toggle="tab" href="#menu2"><i class="fas fa-film"></i> FILM DU 7 AOUT</a>
+    <a class="pre-inscription col-lg-3 col-sm-12" data-toggle="tab" href="#menu3"><i class="fas fa-film"></i> FILM DU 8 AOUT</a>
+  </div>
+  
+  <div class="tab-content w-70 film-menu">
+    <div id="vide" class="tab-pane fade in active">
+    </div>
+    <div id="menu0" class="tab-pane fade">
+      <h3 class="text-center text-uppercase">Programations du 5 aout</h3>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">Max la menace</h5>
+          <img class="poster-size mb-2" src="img/poster/114624-b-max-la-menace.jpg" alt="max la menace">
+          <span class="poster-caption poster-caption-action m-1">action</span>
+          <span class="poster-caption poster-caption-humour m-1">humour</span>
+        </div>
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">tracer</h5>
+          <img class="poster-size mb-2" src="img/poster/067660.jpg" alt="tracer">
+          <span class="poster-caption poster-caption-action m-1">action</span>
+        </div>
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">paddington 2</h5>
+          <img class="poster-size mb-2" src="img/poster/1538710.jpg" alt="paddington 2">
+          <span class="poster-caption poster-caption-animation m-1">animation</span>
+        </div>
+      </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3 class="text-center text-uppercase">Programations du 6 aout</h3>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">Casse noisette</h5>
+          <img class="poster-size mb-2" src="img/poster/2018-casse-noisette-01-big.jpg" alt="casse noisette">
+          <span class="poster-caption poster-caption-fantastique m-1">fantastique</span>
+        </div> 
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">Falcon rising</h5>
+          <img class="poster-size mb-2" src="img/poster/261694.jpg" alt="falcon rising">
+          <span class="poster-caption poster-caption-action m-1">action</span>
+        </div>
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">paddington</h5>
+          <img class="poster-size mb-2" src="img/poster/263690.jpg" alt="paddington 1">
+          <span class="poster-caption poster-caption-animation m-1">animation</span>
+        </div>
+      </div>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3 class="text-center text-uppercase">Programations du 7 aout</h3>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">FURIE</h5>
+          <img class="poster-size mb-2" src="img/poster/3427098.jpg" alt="furie">
+          <span class="poster-caption poster-caption-fantastique m-1">action</span>
+        </div>
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">coco</h5>
+          <img class="poster-size mb-2" src="img/poster/4654564654.jpg" alt="coco le film">
+          <span class="poster-caption poster-caption-animation m-1">animation</span>
+        </div>
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">montrak</h5>
+          <img class="poster-size mb-2" src="img/poster/4937589.jpg" alt="montrak">
+          <span class="poster-caption poster-caption-action m-1">action</span>
+        </div>
+      </div>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3 class="text-center text-uppercase">Programations du 8 aout</h3>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">heidi</h5>
+          <img class="poster-size mb-2" src="img/poster/78787.jpg" alt="heidi">
+          <span class="poster-caption poster-caption-fantastique m-1">fantastique</span>
+        </div>
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">aladin</h5>
+          <img class="poster-size mb-2" src="img/poster/affiche-aladdin-film-09.jpg" alt="aladin le film">
+          <span class="poster-caption poster-caption-action m-1">action</span>
+          <span class="poster-caption poster-caption-fantastique m-1">fantastique</span>
+        </div>
+        <div class="col-lg-4 col-sm-12 mt-2">
+          <h5 class="text-center poster-header text-uppercase">armada</h5>
+          <img class="poster-size mb-2" src="img/poster/armada-recto-dvd-2d-640x909.jpg" alt="armada">
+          <span class="poster-caption poster-caption-action m-1">action</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="post-news mt-5 news-section" id="news">
+    <div class="container">
+     <div class="row">
+      <div class="col-12 d-flex justify-content-center pb-3">
+        <a href="#" class="post-link">
+          <article class="post-article pb-3 m-auto">
+            <img src="img/article.png" alt="article-image">
+            <div class="info-article m-3">
+              <span class="article-creator p-3"> Par John doe </span>
+              <span class="article-date p-3">Le 10 oct 2020 </span>
+            </div>
+            <div class="title-article container">
+              <h5 class="text-uppercase font-weight-bold">Lorem ipsum dolor sit 3</h5>
+            </div>
+            <div class="content-article container">
+              <p>Mon association "Les Films de Plein Air" vient d'obtenir l'autorisation de projeter au parc Monceau cette année, chaque soir du 5 au 8 août, de 18 heures à minuit. Je souhaite ainsi faire découvrir des films d'auteur au grand public.</p>
+            </div>
+            <a href="#" class="float-right pr-5 text-decoration-none"> en voir plus</a>
+          </article>
+          </a>
+        </div>
+      </div>
+  </div>
+  <nav aria-label="Page navigation" class="d-flex justify-content-center">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" style="color: black;" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" style="color: black;" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" style="color: black;" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" style="color: black;" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" style="color: black;" href="#">Next</a></li>
+    </ul>
+  </nav> 
+</div>
+</section>
+<section id="map" class="map">
+    <div class="row">
+        <div class="col-sm-12 col-fix">
+            <iframe class="embed-responsive-item mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10495.532706460806!2d2.299344643593271!3d48.8795035575588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1514225756510" height="350px" width="100%" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="row">
+    <div class="col-lg-6 col-sm-12">
+       
+        <h4><i class="fas fa-external-link-alt"></i> En partenariats avec</h4>
+
+        <div class="row partenaire">
+            <div class="col-lg-4 col-sm-12"> 
+                <a href="#"><img src="img/mairie-paris.png" alt="ville-de-paris"></a> 
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <a href="#"><img src="img/gaumont-logo.png" alt="cinema-gaumont"></a> 
+            </div> 
+            <div class="col-lg-4 col-sm-12">
+                <a href="#"><img src="img/logo_afca.png" alt="afca-de-paris"></a>
+            </div>     
+        </div>
+
+    </div>
+    <div class="col-lg-6 col-sm-12 col-fix-footer">
+
+        <h4><i class="far fa-envelope"></i> Newsletter</h4>
+        
+        <p>L'accès aux projections sera gratuit et ouvert à tous mais je souhaite que le public puisse se préinscrire pour estimer le nombre de personnes présentes chaque soir.</p>
+
+        <form action="#">
+            <div class="form-row">
+                <div class="col">
+                    <input type="email" class="form-control mt-4" placeholder="votre email">
+                </div>
+                <div class="col">
+                    <input class="m-3 input-submit" type="submit" value="ENVOYER">
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    <div class="col text-center mt-4 text-uppercase">
+        <p>© 2021 Festival des films de plein air</p>
+    </div>
+</div>
+</div>
+</footer>
+</body>
+  <!-- Custom JavaScript for this theme -->
+<script src="https://kit.fontawesome.com/5f89e612de.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>
